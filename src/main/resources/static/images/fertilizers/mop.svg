@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320">
+  <rect width="420" height="320" fill="#fff0ef"/>
+  <path d="M126 72h168l30 198H96z" fill="#ffffff" stroke="#d94c43" stroke-width="8"/>
+  <path d="M148 72h124l-14-34H162z" fill="#e86a61"/>
+  <rect x="130" y="126" width="160" height="82" rx="8" fill="#d94c43"/>
+  <text x="210" y="178" font-family="Arial" font-size="46" font-weight="700" text-anchor="middle" fill="#fff">MOP</text>
+  <path d="M148 244c34 20 88 20 124 0" fill="none" stroke="#e86a61" stroke-width="12" stroke-linecap="round"/>
+</svg>

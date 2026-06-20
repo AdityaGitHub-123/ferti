@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320">
+  <rect width="420" height="320" fill="#f7ecff"/>
+  <rect y="220" width="420" height="100" fill="#c9a56f"/>
+  <path d="M210 78c58 48 72 96 44 132-22 29-66 29-88 0-28-36-14-84 44-132z" fill="#c77cc6" stroke="#8e4a92" stroke-width="6"/>
+  <path d="M210 78c-10 44-8 92 0 138M182 110c-18 34-18 70-2 98M238 110c18 34 18 70 2 98" fill="none" stroke="#f7c8ef" stroke-width="5"/>
+  <path d="M202 78c-22-30-30-54-24-74M218 78c22-30 30-54 24-74" stroke="#3e8f45" stroke-width="7" stroke-linecap="round"/>
+  <text x="210" y="292" font-family="Arial" font-size="34" font-weight="700" text-anchor="middle" fill="#6e3770">ONION</text>
+</svg>

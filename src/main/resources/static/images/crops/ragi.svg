@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320">
+  <rect width="420" height="320" fill="#f5edd7"/>
+  <rect y="220" width="420" height="100" fill="#b98248"/>
+  <g stroke="#3f7a35" stroke-width="8" stroke-linecap="round">
+    <path d="M135 228c8-56 16-100 32-138"/>
+    <path d="M205 228c4-64 8-112 10-150"/>
+    <path d="M275 228c-8-54-18-96-34-136"/>
+  </g>
+  <g fill="#8b4f2b">
+    <circle cx="166" cy="86" r="15"/><circle cx="188" cy="72" r="13"/><circle cx="208" cy="90" r="14"/>
+    <circle cx="218" cy="72" r="13"/><circle cx="240" cy="86" r="15"/>
+  </g>
+  <text x="210" y="292" font-family="Arial" font-size="34" font-weight="700" text-anchor="middle" fill="#4d2e19">RAGI</text>
+</svg>

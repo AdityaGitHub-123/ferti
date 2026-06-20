@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320">
+  <rect width="420" height="320" fill="#fff4dd"/>
+  <rect y="220" width="420" height="100" fill="#a96d3f"/>
+  <g fill="#d9a55d" stroke="#8b562b" stroke-width="6">
+    <path d="M150 110c34-28 70 0 54 38 34 8 42 54 0 70-36 14-72-14-58-50-34-10-36-42 4-58z"/>
+    <path d="M246 104c34-24 66 4 50 40 32 10 36 52-4 66-34 12-68-14-54-48-30-12-30-42 8-58z"/>
+  </g>
+  <g fill="#9a673a"><circle cx="164" cy="136" r="4"/><circle cx="190" cy="178" r="4"/><circle cx="262" cy="134" r="4"/><circle cx="284" cy="176" r="4"/></g>
+  <text x="210" y="292" font-family="Arial" font-size="34" font-weight="700" text-anchor="middle" fill="#6f4320">GROUNDNUT</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320">
+  <rect width="420" height="320" fill="#fff6d7"/>
+  <rect y="230" width="420" height="90" fill="#e7bd4f"/>
+  <g stroke="#b68419" stroke-width="7" stroke-linecap="round">
+    <path d="M130 242V80"/><path d="M180 242V74"/><path d="M230 242V78"/><path d="M280 242V88"/>
+  </g>
+  <g fill="#d9a622">
+    <path d="M130 92c-34 22-34 48 0 70 34-22 34-48 0-70z"/>
+    <path d="M180 86c-34 22-34 48 0 70 34-22 34-48 0-70z"/>
+    <path d="M230 90c-34 22-34 48 0 70 34-22 34-48 0-70z"/>
+    <path d="M280 100c-34 22-34 48 0 70 34-22 34-48 0-70z"/>
+  </g>
+  <text x="210" y="292" font-family="Arial" font-size="34" font-weight="700" text-anchor="middle" fill="#6e4f0c">WHEAT</text>
+</svg>

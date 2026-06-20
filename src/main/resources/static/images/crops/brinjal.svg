@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320">
+  <rect width="420" height="320" fill="#f1ecff"/>
+  <rect y="220" width="420" height="100" fill="#9c7146"/>
+  <ellipse cx="210" cy="158" rx="72" ry="88" fill="#6d3fb0" stroke="#43216f" stroke-width="7"/>
+  <path d="M170 90c22 20 58 20 82 0l-20 38h-44z" fill="#4f9b48"/>
+  <path d="M210 82c5-26 20-44 46-52" fill="none" stroke="#377b38" stroke-width="8" stroke-linecap="round"/>
+  <ellipse cx="186" cy="134" rx="16" ry="36" fill="#8d66c9" opacity=".55"/>
+  <text x="210" y="292" font-family="Arial" font-size="34" font-weight="700" text-anchor="middle" fill="#3e2669">BRINJAL</text>
+</svg>

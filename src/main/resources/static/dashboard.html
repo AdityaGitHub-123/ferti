@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | FertiSmart</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body data-page="dashboard">
+<div class="site-shell">
+    <nav class="navbar">
+        <a class="brand" href="/index.html"><span class="brand-mark">FS</span><span>FertiSmart</span></a>
+        <button class="nav-toggle" data-nav-toggle aria-label="Open menu"><span class="menu-bars"></span></button>
+        <div class="nav-links">
+            <a href="/index.html" data-current="home">Home</a>
+            <a href="/dashboard.html" data-current="dashboard" data-auth-only>Dashboard</a>
+            <a href="/soil-form.html" data-current="soil" data-auth-only>Analyze</a>
+            <a href="/history.html" data-current="history" data-auth-only>Records</a>
+            <a href="/about.html" data-current="about">About</a>
+        </div>
+        <div class="nav-actions">
+
+            <div class="profile-menu" data-auth-only>
+                <button class="profile-trigger" data-profile-trigger><img class="avatar" src="/images/ui/profile-placeholder.svg" alt=""><span data-username>Farmer</span></button>
+                <div class="dropdown"><a href="/profile.html">Profile</a><button data-logout>Logout</button></div>
+            </div>
+        </div>
+    </nav>
+    <main class="main layout">
+        <aside class="sidebar">
+            <a href="/dashboard.html" data-current="dashboard">Dashboard</a>
+            <a href="/soil-form.html" data-current="soil">Analyze Soil</a>
+            <a href="/result.html" data-current="result">Guidance</a>
+            <a href="/history.html" data-current="history">Records</a>
+            <a href="/profile.html" data-current="profile">Profile</a>
+        </aside>
+        <section>
+            <div class="page-title" style="margin-bottom: 40px; border-bottom: 1px solid var(--line); padding-bottom: 24px; display: flex; justify-content: space-between; align-items: flex-end;">
+                <div>
+                    <span class="eyebrow" style="color: var(--brand); letter-spacing: 0.05em;">DASHBOARD</span>
+                    <h1 style="font-size: 2.2rem; letter-spacing: -0.02em;">Farm Intelligence</h1>
+                </div>
+                <div class="actions" style="margin-top: 0;">
+                    <a class="btn primary" href="/soil-form.html" style="min-height: 40px; padding: 0 16px;">+ New Analysis</a>
+                </div>
+            </div>
+            
+            <div class="grid cards" style="margin-bottom: 32px;">
+                <article class="card metric" style="padding: 24px; display: flex; flex-direction: column; justify-content: space-between; border-radius: 20px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 0.85rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em;">Total Analyses</span>
+                        <div style="width: 32px; height: 32px; border-radius: 8px; background: color-mix(in srgb, var(--brand) 15%, transparent); display: grid; place-items: center; color: var(--brand);">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        </div>
+                    </div>
+                    <strong id="testsCount" style="font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; color: var(--text); margin-top: 16px;">0</strong>
+                </article>
+                <article class="card metric" style="padding: 24px; display: flex; flex-direction: column; justify-content: space-between; border-radius: 20px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 0.85rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em;">Active Guidance</span>
+                        <div style="width: 32px; height: 32px; border-radius: 8px; background: color-mix(in srgb, var(--accent) 15%, transparent); display: grid; place-items: center; color: var(--accent);">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+                        </div>
+                    </div>
+                    <strong id="recommendationCount" style="font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; color: var(--text); margin-top: 16px;">0</strong>
+                </article>
+                <article class="card metric" style="padding: 24px; display: flex; flex-direction: column; justify-content: space-between; border-radius: 20px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 0.85rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em;">Healthy Fields</span>
+                        <div style="width: 32px; height: 32px; border-radius: 8px; background: color-mix(in srgb, var(--brand-2) 15%, transparent); display: grid; place-items: center; color: var(--brand-2);">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10.000 10.000 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                        </div>
+                    </div>
+                    <strong id="healthyCount" style="font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; color: var(--text); margin-top: 16px;">0</strong>
+                </article>
+                <article class="card metric" style="padding: 24px; display: flex; flex-direction: column; justify-content: space-between; border-radius: 20px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 0.85rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em;">Attention Needed</span>
+                        <div style="width: 32px; height: 32px; border-radius: 8px; background: color-mix(in srgb, var(--danger) 15%, transparent); display: grid; place-items: center; color: var(--danger);">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        </div>
+                    </div>
+                    <strong id="attentionCount" style="font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; color: var(--text); margin-top: 16px;">0</strong>
+                </article>
+            </div>
+            
+            <div class="dashboard-charts" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-bottom: 32px;">
+                <article class="card" style="display: flex; flex-direction: column; border-radius: 20px; padding: 32px;">
+                    <h3 style="margin-top:0; font-size: 1.2rem; letter-spacing: -0.01em; color: var(--text); margin-bottom: 24px;">Growth Activity</h3>
+                    <div style="position: relative; height: 260px; width: 100%; flex: 1;">
+                        <canvas id="trendsChart"></canvas>
+                    </div>
+                </article>
+                <article class="card" style="display: flex; flex-direction: column; border-radius: 20px; padding: 32px;">
+                    <h3 style="margin-top:0; font-size: 1.2rem; letter-spacing: -0.01em; color: var(--text); margin-bottom: 24px;">Overall Soil Health</h3>
+                    <div style="position: relative; height: 260px; width: 100%; flex: 1;">
+                        <canvas id="healthChart"></canvas>
+                    </div>
+                </article>
+            </div>
+            <div class="actions">
+                <a class="btn primary" href="/soil-form.html">New Soil Analysis</a>
+                <a class="btn" href="/history.html">View Records</a>
+            </div>
+            <div class="page-title" style="margin-top:34px">
+                <h1 style="font-size:2rem">Recent Fertilizer Guidance</h1>
+            </div>
+            <div id="recentRecommendations" class="recommendation-list"></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-inner">
+            <div><strong>FertiSmart</strong><br>Smarter soil decisions, field by field.</div>
+            <div class="footer-links"><a href="/soil-form.html">Analyze Soil</a><a href="/history.html">Records</a><a href="/about.html">Support</a></div>
+        </div>
+    </footer>
+</div>
+<div class="toast-stack"></div>
+<script src="/js/app.js"></script>
+</body>
+</html>

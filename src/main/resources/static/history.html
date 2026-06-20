@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Records | FertiSmart</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body data-page="history">
+<div class="site-shell">
+    <nav class="navbar">
+        <a class="brand" href="/index.html"><span class="brand-mark">FS</span><span>FertiSmart</span></a>
+        <button class="nav-toggle" data-nav-toggle aria-label="Open menu"><span class="menu-bars"></span></button>
+        <div class="nav-links">
+            <a href="/index.html" data-current="home">Home</a>
+            <a href="/dashboard.html" data-current="dashboard" data-auth-only>Dashboard</a>
+            <a href="/soil-form.html" data-current="soil" data-auth-only>Analyze</a>
+            <a href="/history.html" data-current="history" data-auth-only>Records</a>
+            <a href="/about.html" data-current="about">About</a>
+        </div>
+        <div class="nav-actions">
+            <div class="profile-menu" data-auth-only>
+                <button class="profile-trigger" data-profile-trigger><img class="avatar" src="/images/ui/profile-placeholder.svg" alt=""><span data-username>Farmer</span></button>
+                <div class="dropdown"><a href="/profile.html">Profile</a><button data-logout>Logout</button></div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main layout">
+        <aside class="sidebar">
+            <a href="/dashboard.html" data-current="dashboard">Dashboard</a>
+            <a href="/soil-form.html" data-current="soil">Analyze Soil</a>
+            <a href="/result.html" data-current="result">Guidance</a>
+            <a href="/history.html" data-current="history">Records</a>
+            <a href="/profile.html" data-current="profile">Profile</a>
+        </aside>
+
+        <section>
+            <!-- Page Header -->
+            <div class="page-title" style="margin-bottom: 28px; border-bottom: 1px solid var(--line); padding-bottom: 24px; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px;">
+                <div>
+                    <span class="eyebrow" style="color: var(--brand); letter-spacing: 0.05em;">RECOMMENDATION HISTORY</span>
+                    <h1 style="font-size: 2rem; letter-spacing: -0.02em; margin: 0;">Field Records</h1>
+                    <p style="margin: 8px 0 0; color: var(--muted); font-size: 0.95rem;">Review past soil analyses, crop selections, and fertilizer guidance.</p>
+                </div>
+                <button class="btn primary" id="exportHistoryBtn" style="display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 20px;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    Export PDF
+                </button>
+            </div>
+
+            <!-- Filters -->
+            <div class="filters-bar" style="display: flex; gap: 14px; margin-bottom: 24px; flex-wrap: wrap;">
+                <div class="field" style="flex: 1; min-width: 240px;">
+                    <input type="text" id="historySearch" placeholder="Search by crop or fertilizer..." autocomplete="off">
+                </div>
+                <div class="field" style="min-width: 160px;">
+                    <select id="historyStatusFilter">
+                        <option value="">All Statuses</option>
+                        <option value="Healthy">Healthy</option>
+                        <option value="Moderate">Moderate</option>
+                        <option value="Critical">Critical</option>
+                    </select>
+                </div>
+                <div class="field" style="min-width: 175px;">
+                    <input type="date" id="historyDateFilter">
+                </div>
+            </div>
+
+            <!-- Table -->
+            <div class="card" style="padding: 0; overflow: hidden;">
+                <div class="table-wrap">
+                    <table id="historyDataTbl">
+                        <thead>
+                            <tr>
+                                <th>Crop</th>
+                                <th>Crop Type</th>
+                                <th>Fertilizer</th>
+                                <th>Name</th>
+                                <th>Deficiency</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="historyTable">
+                            <tr><td colspan="7">
+                                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 48px; color: var(--muted);">
+                                    <div class="spinner" style="width: 40px; height: 40px; margin-bottom: 16px;"></div>
+                                    Loading field records...
+                                </div>
+                            </td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div>
+                <strong>FertiSmart</strong><br>
+                Precision soil intelligence for modern agriculture.
+            </div>
+            <div class="footer-links">
+                <a href="/dashboard.html">Dashboard</a>
+                <a href="/soil-form.html">New Analysis</a>
+                <a href="/about.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+</div>
+<div class="toast-stack"></div>
+<script src="/js/app.js"></script>
+</body>
+</html>

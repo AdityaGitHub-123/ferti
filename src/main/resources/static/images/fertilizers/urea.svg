@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320">
+  <rect width="420" height="320" fill="#eef8f1"/>
+  <path d="M130 72h160l32 198H98z" fill="#ffffff" stroke="#247a45" stroke-width="8"/>
+  <path d="M150 72h120l-12-34h-96z" fill="#68b859"/>
+  <rect x="132" y="126" width="156" height="82" rx="8" fill="#247a45"/>
+  <text x="210" y="176" font-family="Arial" font-size="44" font-weight="700" text-anchor="middle" fill="#fff">UREA</text>
+  <circle cx="158" cy="246" r="12" fill="#dff4ff"/>
+  <circle cx="204" cy="246" r="12" fill="#dff4ff"/>
+  <circle cx="250" cy="246" r="12" fill="#dff4ff"/>
+</svg>

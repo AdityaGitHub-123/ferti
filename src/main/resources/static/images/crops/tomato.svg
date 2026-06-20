@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320">
+  <rect width="420" height="320" fill="#f0faef"/>
+  <rect y="244" width="420" height="76" fill="#8cc16f"/>
+  <path d="M210 244V100" stroke="#247a45" stroke-width="10" stroke-linecap="round"/>
+  <path d="M210 156c-58-46-96-36-116 8 48 28 86 26 116-8z" fill="#68b859"/>
+  <path d="M210 170c58-46 96-36 116 8-48 28-86 26-116-8z" fill="#247a45"/>
+  <circle cx="170" cy="204" r="34" fill="#d94c43"/>
+  <circle cx="246" cy="214" r="38" fill="#e85d52"/>
+  <path d="M150 176l20 18 20-18" fill="none" stroke="#247a45" stroke-width="6"/>
+  <text x="210" y="292" font-family="Arial" font-size="34" font-weight="700" text-anchor="middle" fill="#17452a">TOMATO</text>
+</svg>

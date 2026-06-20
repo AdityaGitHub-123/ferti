@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FertiSmart | Smart Agriculture Platform</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body data-page="home">
+<div class="site-shell">
+    <nav class="navbar">
+        <a class="brand" href="/index.html"><span class="brand-mark">FS</span><span>FertiSmart</span></a>
+        <button class="nav-toggle" data-nav-toggle aria-label="Open menu"><span class="menu-bars"></span></button>
+        <div class="nav-links">
+            <a href="/index.html" data-current="home">Home</a>
+            <a href="/dashboard.html" data-current="dashboard" data-auth-only>Dashboard</a>
+            <a href="/soil-form.html" data-current="soil" data-auth-only>Analyze</a>
+            <a href="/history.html" data-current="history" data-auth-only>Records</a>
+            <a href="/about.html" data-current="about">About</a>
+        </div>
+        <div class="nav-actions">
+            <a class="btn ghost" href="/login.html" data-guest-only>Login</a>
+            <a class="btn primary" href="/signup.html" data-guest-only>Signup</a>
+            <div class="profile-menu" data-auth-only>
+                <button class="profile-trigger" data-profile-trigger><img class="avatar" src="/images/ui/profile-placeholder.svg" alt=""><span data-username>Farmer</span></button>
+                <div class="dropdown">
+                    <a href="/profile.html">Profile</a>
+                    <button data-logout>Logout</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <section class="hero hero-home reveal" style="--delay: 0s;">
+            <div class="hero-copy">
+                <span class="hero-badge">Agriculture intelligence, reimagined</span>
+                <h1>Precision farming powered by soil data.</h1>
+                <p>Analyze soil nutrients, understand crop needs, and receive precise fertilizer guidance designed for confident, sustainable growing decisions.</p>
+                <div class="actions hero-actions">
+                    <a class="btn primary" href="/soil-form.html">Start Free Analysis</a>
+                    <a class="btn ghost" href="/about.html">View Demo</a>
+                </div>
+                <div class="hero-value-grid">
+                    <div>
+                        <strong>17</strong>
+                        <span>Crop types supported</span>
+                    </div>
+                    <div>
+                        <strong>4</strong>
+                        <span>Key soil markers</span>
+                    </div>
+                    <div>
+                        <strong>Instant</strong>
+                        <span>Guidance delivery</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-panel hero-panel-home">
+                <div class="hero-panel-accent hero-panel-accent-one"></div>
+                <div class="hero-panel-accent hero-panel-accent-two"></div>
+                <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?q=80&w=1200&auto=format&fit=crop" alt="Farmer using tablet in field">
+                <div class="hero-panel-overlay"></div>
+                <div class="hero-panel-card reveal" style="--delay: 0.1s;">
+                    <div class="hero-panel-card-title">Live crop guidance</div>
+                    <div class="hero-panel-card-grid">
+                        <div>
+                            <strong>24/7</strong>
+                            <span>Insights</span>
+                        </div>
+                        <div>
+                            <strong>Crop-ready</strong>
+                            <span>Fertilizer advice</span>
+                        </div>
+                        <div>
+                            <strong>Actionable</strong>
+                            <span>Field-first steps</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider reveal" style="--delay: 0.15s;"></div>
+
+        <section class="home-stats reveal" style="--delay: 0.2s;">
+            <article class="card metric">
+                <span class="eyebrow">Supported Crops</span>
+                <strong>17</strong>
+            </article>
+            <article class="card metric">
+                <span class="eyebrow">N-P-K-pH Coverage</span>
+                <strong>4</strong>
+            </article>
+            <article class="card metric">
+                <span class="eyebrow">Instant Results</span>
+                <strong>Ready</strong>
+            </article>
+        </section>
+
+        <section class="process-section reveal" style="--delay: 0.25s;">
+            <div class="section-heading">
+                <span class="eyebrow">How it works</span>
+                <h2>Turn soil readings into actionable fertilizer decisions.</h2>
+                <p>Follow a modern, intuitive process built for growers who want better yield with less guesswork.</p>
+            </div>
+            <div class="process-grid">
+                <article class="process-step">
+                    <div class="step-icon">1</div>
+                    <h3>Enter Soil Values</h3>
+                    <p>Submit N-P-K-pH readings and crop type in a few simple steps.</p>
+                </article>
+                <article class="process-step">
+                    <div class="step-icon">2</div>
+                    <h3>Analyze Nutrients</h3>
+                    <p>Smart algorithms evaluate deficiencies and crop needs instantly.</p>
+                </article>
+                <article class="process-step">
+                    <div class="step-icon">3</div>
+                    <h3>Get Recommendations</h3>
+                    <p>Receive fertilizer guidance with practical application details.</p>
+                </article>
+                <article class="process-step">
+                    <div class="step-icon">4</div>
+                    <h3>Download Report</h3>
+                    <p>Export a polished PDF summary for record keeping and planning.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="feature-section reveal" style="--delay: 0.3s;">
+            <div class="section-heading">
+                <span class="eyebrow">Product capabilities</span>
+                <h2>All the tools you need for smarter field decisions.</h2>
+            </div>
+            <div class="feature-grid">
+                <article class="card feature-card-home">
+                    <div class="feature-icon feature-icon-soil">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V4"/><path d="M12 22s-8-4-8-10V4"/><path d="M12 2v20"/></svg>
+                    </div>
+                    <h3>Soil Analysis</h3>
+                    <p>Understand your soil profile with clarity and direction.</p>
+                </article>
+                <article class="card feature-card-home">
+                    <div class="feature-icon feature-icon-fertilizer">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18H6z"/><path d="M12 8v8"/><path d="M9 5h6"/></svg>
+                    </div>
+                    <h3>Fertilizer Recommendation</h3>
+                    <p>Get specific product guidance tailored to nutrient gaps.</p>
+                </article>
+                <article class="card feature-card-home">
+                    <div class="feature-icon feature-icon-crop">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.134 2 5 5.134 5 9c0 4.5 7 13 7 13s7-8.5 7-13c0-3.866-3.134-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                    </div>
+                    <h3>Crop Guidance</h3>
+                    <p>Match fertility advice to the needs of your selected crop.</p>
+                </article>
+                <article class="card feature-card-home">
+                    <div class="feature-icon feature-icon-report">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l6 6v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M9 3v6h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+                    </div>
+                    <h3>PDF Reports</h3>
+                    <p>Export clear, professional summaries for easy sharing.</p>
+                </article>
+                <article class="card feature-card-home">
+                    <div class="feature-icon feature-icon-history">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v5h5"/><path d="M21 21v-5h-5"/><path d="M21 8a9 9 0 1 0-9 9"/><path d="M12 7v5l3 3"/></svg>
+                    </div>
+                    <h3>Recommendation History</h3>
+                    <p>Keep a clean record of past advice and soil decisions.</p>
+                </article>
+                <article class="card feature-card-home">
+                    <div class="feature-icon feature-icon-health">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg>
+                    </div>
+                    <h3>Soil Health Monitoring</h3>
+                    <p>Track nutrient and pH balance over time for stronger yields.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer footer-home reveal" style="--delay: 0.35s;">
+        <div class="footer-inner">
+            <div>
+                <strong>FertiSmart</strong>
+                <p>Smart soil analysis & fertilizer recommendation platform.</p>
+            </div>
+            <div class="footer-links footer-links-home">
+                <a href="/index.html">Home</a>
+                <a href="/dashboard.html">Dashboard</a>
+                <a href="/soil-form.html">Analyze</a>
+                <a href="/history.html">Records</a>
+            </div>
+            <div class="footer-copy">© 2026 FertiSmart</div>
+        </div>
+    </footer>
+</div>
+<div class="toast-stack"></div>
+<script src="/js/app.js"></script>
+</body>
+</html>

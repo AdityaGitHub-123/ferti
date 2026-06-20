@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320">
+  <rect width="420" height="320" fill="#edf9ec"/>
+  <rect y="220" width="420" height="100" fill="#8aa95c"/>
+  <g stroke="#3d7a3e" stroke-width="5">
+    <circle cx="210" cy="155" r="78" fill="#9bd176"/>
+    <path d="M150 152c28-34 88-40 120-2" fill="#bfe69c"/>
+    <path d="M170 198c16-46 66-66 104-32" fill="#7fbe61"/>
+    <path d="M132 174c34 10 62 28 78 58" fill="none"/>
+    <path d="M288 172c-34 12-60 30-78 60" fill="none"/>
+  </g>
+  <text x="210" y="292" font-family="Arial" font-size="34" font-weight="700" text-anchor="middle" fill="#315f32">CABBAGE</text>
+</svg>

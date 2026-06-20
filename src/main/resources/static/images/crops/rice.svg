@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320">
+  <rect width="420" height="320" fill="#dff4ff"/>
+  <rect y="210" width="420" height="110" fill="#91cde1"/>
+  <path d="M70 244c80-28 184-30 280 0" fill="none" stroke="#247a45" stroke-width="9"/>
+  <g stroke="#247a45" stroke-width="7" stroke-linecap="round">
+    <path d="M130 238l-20-90"/><path d="M164 236l-4-104"/><path d="M200 236l12-110"/><path d="M238 238l28-96"/>
+  </g>
+  <g fill="#f2d36b">
+    <ellipse cx="108" cy="146" rx="10" ry="20"/><ellipse cx="156" cy="132" rx="10" ry="20"/><ellipse cx="214" cy="126" rx="10" ry="20"/><ellipse cx="268" cy="142" rx="10" ry="20"/>
+  </g>
+  <text x="210" y="292" font-family="Arial" font-size="34" font-weight="700" text-anchor="middle" fill="#17452a">RICE</text>
+</svg>
