@@ -344,6 +344,11 @@ function wireSoilForm() {
             showError(form, "Enter valid numeric soil values");
             return;
         }
+        const validationMessage = validateSoilPayload(payload);
+        if (validationMessage) {
+            showError(form, validationMessage);
+            return;
+        }
         if (!payload.cropType) {
             showError(form, "Choose a crop from the suggestions");
             return;
@@ -365,6 +370,22 @@ function wireSoilForm() {
             showLoader(false);
         }
     });
+}
+
+function validateSoilPayload(payload) {
+    const validations = [
+        { value: payload.nitrogen, min: 0, max: 300, label: "Nitrogen" },
+        { value: payload.phosphorus, min: 0, max: 300, label: "Phosphorus" },
+        { value: payload.potassium, min: 0, max: 300, label: "Potassium" },
+        { value: payload.phValue, min: 0, max: 14, label: "pH" }
+    ];
+
+    for (const item of validations) {
+        if (item.value < item.min || item.value > item.max) {
+            return `${item.label} must be between ${item.min} and ${item.max}`;
+        }
+    }
+    return "";
 }
 
 async function loadCrops() {

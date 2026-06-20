@@ -7,15 +7,18 @@ import jakarta.validation.constraints.NotNull;
 
 public class SoilRequest {
     @NotNull(message = "Nitrogen value is required")
-    @DecimalMin(value = "0.0", message = "Nitrogen cannot be negative")
+    @DecimalMin(value = "0.0", message = "Nitrogen must be between 0 and 300")
+    @DecimalMax(value = "300.0", message = "Nitrogen must be between 0 and 300")
     private Double nitrogen;
 
     @NotNull(message = "Phosphorus value is required")
-    @DecimalMin(value = "0.0", message = "Phosphorus cannot be negative")
+    @DecimalMin(value = "0.0", message = "Phosphorus must be between 0 and 300")
+    @DecimalMax(value = "300.0", message = "Phosphorus must be between 0 and 300")
     private Double phosphorus;
 
     @NotNull(message = "Potassium value is required")
-    @DecimalMin(value = "0.0", message = "Potassium cannot be negative")
+    @DecimalMin(value = "0.0", message = "Potassium must be between 0 and 300")
+    @DecimalMax(value = "300.0", message = "Potassium must be between 0 and 300")
     private Double potassium;
 
     @NotNull(message = "pH value is required")
